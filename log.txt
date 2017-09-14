@@ -1,0 +1,7 @@
+this is my first time to create my own logthis is my first time to create my own logthis is my first time to create my own log
+this is my first time to create my own log
+this is my first time to create my own log
+0
+0
+ 17:44:01 up 65 days,  9:27,  2 users,  load average: 0.00, 0.00, 0.00
+ 17:44:04 up 65 days,  9:27,  2 users,  load average: 0.00, 0.00, 0.00
