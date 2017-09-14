@@ -17,7 +17,8 @@ def testMysql():
    except:
     print("error")
 
-mysql.close()
+   mysql.close()
 
-xx
-#testMysql()
+#xx
+testMysql()
+
