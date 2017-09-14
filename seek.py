@@ -1,1 +1,0 @@
-/root/pythonTest/seek.py

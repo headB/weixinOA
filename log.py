@@ -1,1 +1,0 @@
-/root/pythonTest/log.py

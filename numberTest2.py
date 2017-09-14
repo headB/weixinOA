@@ -1,1 +1,0 @@
-/root/pythonTest/numberTest2.py
