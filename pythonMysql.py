@@ -8,16 +8,16 @@ sql = "select * from classroom"
 
 
 def testMysql():
-    try:
+   try:
      mysql.execute(sql)
      result = mysql.fetchall()
      for x in result:
        print(x)
 
-    except:
-     print("error")
+   except:
+    print("error")
 
- mysql.close()
+mysql.close()
 
 
 #testMysql()
