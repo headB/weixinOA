@@ -1,0 +1,1 @@
+/root/pythonTest/triangle.py

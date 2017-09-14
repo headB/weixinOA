@@ -1,0 +1,1 @@
+/root/pythonTest/wordManage.py
