@@ -1,4 +1,5 @@
 ##crate a new class
+__all__ = ['cat']
 class cat:
 
   def eat(p):
@@ -14,6 +15,9 @@ class dog:
   def shout(self):
      print("wang!wang!wang!")
      print("I am single dog!!miao miao %s")
+
+def printTestX():
+    print("this is classTest of one function")
 ##create a new instance
 
 #tom = cat()
