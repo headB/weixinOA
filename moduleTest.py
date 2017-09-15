@@ -1,5 +1,6 @@
 #import pythonMysql
-from pythonMysql import testMysql
+#from pythonMysql import testMysql
+import classTest
 print("这个是测试模块导入的")
 
 #pythonMysql.testMysql()
@@ -49,7 +50,12 @@ print(test)
 print(test.name)
 
 
+tom = classTest.cat()
+jack = classTest.dog()
 
+tom.play()
+
+jack.shout()
 
 
 
