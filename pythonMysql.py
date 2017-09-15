@@ -20,5 +20,5 @@ def testMysql():
    mysql.close()
 
 #xx
-testMysql()
+##testMysql()
 
