@@ -1,6 +1,6 @@
 #import pythonMysql
 #from pythonMysql import testMysql
-from classTest import cat,printTestX
+from classTest import *
 print("这个是测试模块导入的")
 
 #pythonMysql.testMysql()
@@ -35,6 +35,10 @@ class VarX:
  def __str__(self):
     return "你就是最棒棒了我！！"
 
+class bigCat(VarX):
+ def testPrint(self):
+     print("this is bigCat speak!!")
+     super().testPrint()
 #testMysql()
 
 print("我现在正在用window10的系统，pycharm工具来编写代码的！！")
@@ -55,7 +59,10 @@ tom = cat()
 
 tom.play()
 
-printTestX()
+bigTom = bigCat()
+
+bigTom.testPrint()
+
 
 #jack.shout()
 
