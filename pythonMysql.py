@@ -13,12 +13,12 @@ def testMysql():
      result = mysql.fetchall()
      for x in result:
        print(x)
-
+     mysql.close()
    except:
     print("error")
 
-   mysql.close()
+   #mysql.close()
 
 #xx
-##testMysql()
+#testMysql()
 

@@ -1,7 +1,8 @@
-#import pythonMysql
-#from pythonMysql import testMysql
+import pythonMysql
+from pythonMysql import testMysql
 from classTest import *
 from xuanPrint import *
+#from xuanPrint import package2
 #import xuanPrint
 print("这个是测试模块导入的")
 
@@ -47,28 +48,35 @@ print("我现在正在用window10的系统，pycharm工具来编写代码的！�
 
 test = VarX()
 val = test.testPrint()
-print(val)
 
-print(test.test2Print())
+package2.printWorld.cat()
 
-print(test)
+printTest.xuanxuan()
 
-print(test.name)
+#package2.printWorld.cat()
 
 
-tom = cat()
+#print(val)
+
+#print(test.test2Print())
+
+#print(test)
+
+#print(test.name)
+
+#tom = cat()
+
 #jack = classTest.dog()
 
-tom.play()
+#tom.play()
 
-bigTom = bigCat()
+#bigTom = bigCat()
 
-bigTom.testPrint()
+#bigTom.testPrint()
 
 #xuanPrint.printTestInit()
 
-sendMsg.sendMsg()
-
+#sendMsg.sendMsg()
 
 #jack.shout()
 
