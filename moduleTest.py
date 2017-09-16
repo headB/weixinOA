@@ -1,8 +1,8 @@
 #import pythonMysql
 #from pythonMysql import testMysql
 from classTest import *
-#from xuanPrint import *
-import xuanPrint
+from xuanPrint import *
+#import xuanPrint
 print("这个是测试模块导入的")
 
 #pythonMysql.testMysql()
@@ -65,7 +65,11 @@ bigTom = bigCat()
 
 bigTom.testPrint()
 
-xuanPrint.printTest()
+#xuanPrint.printTestInit()
+
+sendMsg.sendMsg()
+
+
 #jack.shout()
 
 
