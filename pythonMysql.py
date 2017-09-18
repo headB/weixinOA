@@ -6,6 +6,9 @@ mysql = db.cursor(pymysql.cursors.DictCursor)
 
 sql = "select * from classroom"
 
+def ifMain():
+    if  __name__ != "__main__":
+        print("I am not main,send by pythonMysql")
 
 def testMysql():
    try:
@@ -18,7 +21,7 @@ def testMysql():
     print("error")
 
    #mysql.close()
-
+ifMain()
 #xx
 #testMysql()
 

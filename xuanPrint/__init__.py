@@ -1,6 +1,6 @@
-__all__ = ['printTest','sendMsg','package2']
+__all__ = ['printTest','sendMsg']
 
-from . import printTest,sendMsg,package2
+from . import printTest,sendMsg
 
 print('一运行xuanPrint的话就打印这句话')
 

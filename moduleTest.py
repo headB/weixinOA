@@ -47,9 +47,8 @@ class bigCat(VarX):
 print("我现在正在用window10的系统，pycharm工具来编写代码的！！")
 
 test = VarX()
-val = test.testPrint()
 
-package2.printWorld.cat()
+val = test.testPrint()
 
 printTest.xuanxuan()
 
