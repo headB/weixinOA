@@ -17,6 +17,10 @@ class score:
     def getScore(self):
         return self.__num
 
+    num = property(getScore,setScore)
+
 tom = score()
-tom.setScore(60)
-print(tom.getScore())
+#tom.setScore(60)
+#print(tom.getScore())
+tom.num = 80
+print(tom.num)
