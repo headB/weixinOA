@@ -24,3 +24,5 @@ tom = score()
 #print(tom.getScore())
 tom.num = 80
 print(tom.num)
+
+
