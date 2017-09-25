@@ -67,11 +67,16 @@ def test1(num1):
     return test2
 
 
-xx = test1(100)
+#xx = test1(100)
 
-c = xx(200)
+#c = xx(200)
 
-print(c(300))
+#print(c(300))
 
 ##答案是600
 ##测试成功。！！！
+
+##采用新的方式去尝试运行函数试试（闭包）
+#OK!成功。
+xx = test1(100)(200)(300)
+print(xx)
