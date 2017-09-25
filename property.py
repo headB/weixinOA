@@ -56,3 +56,22 @@ ak()
 
 #设置一个函数，来尝试设置值和获取值。
 #修饰器是和闭包结合??
+
+##尝试设置一个连续闭包。
+
+def test1(num1):
+    def test2(num2):
+        def test3(num3):
+            return num1+num2+num3
+        return test3
+    return test2
+
+
+xx = test1(100)
+
+c = xx(200)
+
+print(c(300))
+
+##答案是600
+##测试成功。！！！
