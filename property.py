@@ -30,6 +30,29 @@ print(tom.num)
 
 ##自己定义一个修饰器。
 
+def weapon(functionName):
+  def warpTest():
+    functionName()
+    value= 'this is run a weapon function!!'
+    print(value)
+  return warpTest
+ #    print(name)
+ #   print(ammo)
+ #   print(who)
+
+#weapon()
+
+##哈哈哈，一看我自己就知道是新手啦，写修饰器的时候，居然后面写了括号
+@weapon
+def ak():
+    print('I am kumanxuan')
+
+
+ak()
 
 
 
+##OK，自己成功定义了一个修饰器函数。
+
+#设置一个函数，来尝试设置值和获取值。
+#修饰器是和闭包结合??
