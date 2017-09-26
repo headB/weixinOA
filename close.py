@@ -49,11 +49,13 @@ def createNum():
 z=createNum()
 
 
-print(next(z))
-print(next(z))
-print(next(z))
-print(next(z))
-print(next(z))
+#print(next(z))
+for x in z:
+    print(x)
+    print('++++')
+
+##循环了结果发现，在yield这个关键字分两段，前面和yield是一段结果，然后后面又一段执行结果。
+
 
 
 
