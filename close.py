@@ -36,3 +36,26 @@ print(type(f))
 #<class 'list'>
 #<class 'generator'>
 
+##python的第二种创建生成器的方法  关键字 yield ???
+def createNum():
+    a = 0
+    for x in range(5,10):
+        print('hello world!')
+        a = a+x
+        yield a
+        #返回A值.
+        print('hello hell')
+
+z=createNum()
+
+
+print(next(z))
+print(next(z))
+print(next(z))
+print(next(z))
+print(next(z))
+
+
+
+
+
