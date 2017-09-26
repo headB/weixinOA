@@ -1,21 +1,32 @@
 import types
 print('测试闭包')
 
-def test(num):
+def test(num=0):
     print('--1--')
+    tmp=1
+
 
     def test1(num2):
+
         print('--2--')
-        print(num+num2)
+        #xx = tmp+num+num2
+        return  tmp+num+num2
+        #print(tmp)
+        #print(num+num2,sep='',end='---++---\n')
+
 
     return test1
 
-#ret = test(100)
+ret = test(100)
 #print('----3----')
 
-#ret(200)
+print(ret(200)+ret(300))
+#print(ret(300))
+
 
 ##等于300
+##测试连续变化带入数值到闭包
+
 
 
 
