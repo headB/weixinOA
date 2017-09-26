@@ -1,3 +1,4 @@
+import types
 print('测试闭包')
 
 def test(num):
@@ -56,8 +57,24 @@ for x in z:
 
 ##循环了结果发现，在yield这个关键字分两段，前面和yield是一段结果，然后后面又一段执行结果。
 
+class cat:
 
+    def __init__(self):
+        self.name = 'kuManMao'
 
+    def name(self):
+        print("I am a little cat!")
+
+def eat(self):
+    print("I am eating!!%s" %(self.name))
+
+tom = cat()
+
+##测试使用types.MethodType这个函数。
+
+tom.eat = types.MethodType(eat,tom)
+
+tom.eat()
 
 
 
