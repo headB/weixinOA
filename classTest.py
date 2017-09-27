@@ -29,4 +29,14 @@ def printTestX():
 #tom.sleep()
 #tom.play()
 
+##这个是测试用type创建类，然后再创建一个实例。
 
+##成功创建了一个元类，嗯嗯，不错。！！
+def printWorld(self):
+    print('hello world - XD - X2')
+
+printX = type("printX2",(),{"num":printWorld})
+
+test2 = printX()
+
+test2.num()
