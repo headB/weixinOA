@@ -98,6 +98,17 @@ tom.eat()
 ##在类里面定义了__call__
 tom('tiger')
 
+def testArgs(*args,**kwargs):
+    print("一下是关于args的")
+    for x in args:
+        print(x)
+
+    print("一下是关于kwargs的")
+    for x in kwargs:
+        print(x)
+
+##测试args功能。！！
+testArgs(1,2,3,(1,3,4,4,'xx'),[1,3,4],{'name':'kumanxuan','age':'25'},name='xx',age='24')
 
 
 
