@@ -71,13 +71,20 @@ for x in z:
 class cat:
 
     def __init__(self):
+
         self.name = 'kuManMao'
 
     def name(self):
         print("I am a little cat!")
 
+    def __call__(self,fatherName):
+        print("my name is %s"%(self.name))
+        print("my father name is %s"%(fatherName))
+
 def eat(self):
+
     print("I am eating!!%s" %(self.name))
+
 
 tom = cat()
 
@@ -86,6 +93,11 @@ tom = cat()
 tom.eat = types.MethodType(eat,tom)
 
 tom.eat()
+
+##把类当函数一样调用。
+##在类里面定义了__call__
+tom('tiger')
+
 
 
 
