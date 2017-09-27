@@ -32,7 +32,7 @@ def printTestX():
 ##这个是测试用type创建类，然后再创建一个实例。
 
 ##成功创建了一个元类，嗯嗯，不错。！！
-def printWorld(self):
+def printWorld(x):
     print('hello world - XD - X2')
 
 printX = type("printX2",(),{"num":printWorld})
@@ -40,3 +40,16 @@ printX = type("printX2",(),{"num":printWorld})
 test2 = printX()
 
 test2.num()
+
+##利用元类去定义类，不过增加了继承，
+
+def print2(x):
+    print('this is the send function to print')
+
+test3 = type('xx',(printX,),{'cc':print2})
+
+test4 = test3()
+
+test4.cc()
+
+test4.num()
