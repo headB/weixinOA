@@ -53,3 +53,22 @@ test4 = test3()
 test4.cc()
 
 test4.num()
+
+print(test4.__class__)
+
+print(test3.__class__)
+
+##创建一个生成器-->
+##首先创建一个字典。
+x2 = {'name':'kumanxuan','age':'25','aka':'beetle'}
+
+#字典的历遍,并且变成生成器
+
+x3 = ((name,values)  for name,values in x2.items())
+print(x3)
+
+
+print(next(x3))
+print(next(x3))
+print(next(x3))
+
