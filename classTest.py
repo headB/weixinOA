@@ -2,6 +2,8 @@
 __all__ = ['cat']
 class cat:
 
+  print('现在就是假如我不创建一个对象，不实例，直接写语句，看看会有什么结果。！！')
+
   def eat(p):
     print("我正在吃")
 
@@ -26,4 +28,5 @@ def printTestX():
 #tom.eat()
 #tom.sleep()
 #tom.play()
+
 
