@@ -20,11 +20,11 @@ class score:
 
  #   num = property(getScore,setScore)
 
-tom = score()
+#tom = score()
 #tom.setScore(60)
 #print(tom.getScore())
-tom.num = 80
-print(tom.num)
+#tom.num = 80
+#print(tom.num)
 
 ##针对上面的代码，针对修饰器的知识认知，然后修改了一下个别函数的名字，然后证明可以用。
 
@@ -48,7 +48,7 @@ def ak():
     print('I am kumanxuan')
 
 
-ak()
+#ak()
 
 
 
@@ -78,5 +78,21 @@ def test1(num1):
 
 ##采用新的方式去尝试运行函数试试（闭包）
 #OK!成功。
-xx = test1(100)(200)(300)
-print(xx)
+##xx = test1(100)(200)(300)
+##print(xx)
+
+##测试字典的属性，就是下标，测试下标。
+
+dict = {}
+
+dict1 = {'name':'lizhixuan'}
+
+dict2 = {'name':dict1}
+
+list = ['kumanxuan','lizhixuan']
+
+list1 = ['ccvv','gghh']
+
+dict['test'] = dict2
+
+print(dict['test']['name']['name'])
