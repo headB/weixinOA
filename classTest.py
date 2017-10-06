@@ -2,6 +2,8 @@
 __all__ = ['cat']
 class cat:
 
+  print('现在就是假如我不创建一个对象，不实例，直接写语句，看看会有什么结果。！！')
+
   def eat(p):
     print("我正在吃")
 
@@ -26,4 +28,47 @@ def printTestX():
 #tom.eat()
 #tom.sleep()
 #tom.play()
+
+##这个是测试用type创建类，然后再创建一个实例。
+
+##成功创建了一个元类，嗯嗯，不错。！！
+def printWorld(x):
+    print('hello world - XD - X2')
+
+printX = type("printX2",(),{"num":printWorld})
+
+test2 = printX()
+
+test2.num()
+
+##利用元类去定义类，不过增加了继承，
+
+def print2(x):
+    print('this is the send function to print')
+
+test3 = type('xx',(printX,),{'cc':print2})
+
+test4 = test3()
+
+test4.cc()
+
+test4.num()
+
+print(test4.__class__)
+
+print(test3.__class__)
+
+##创建一个生成器-->
+##首先创建一个字典。
+x2 = {'name':'kumanxuan','age':'25','aka':'beetle'}
+
+#字典的历遍,并且变成生成器
+
+x3 = ((name,values)  for name,values in x2.items())
+print(x3)
+
+
+print(next(x3))
+print(next(x3))
+print(next(x3))
 
