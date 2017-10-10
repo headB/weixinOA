@@ -3,9 +3,11 @@ from multiprocessing import Process
 import time
 
 ##这里已经是创建了Process的子类了，MyNewProcess就是Process的子类。
+
+##添加参数，看看父进程的处理方法，不过啦，应该是一样的啦。！！
 class MyNewProcess(Process):
     def run(self):
-        while True:
+        for y in range(6):
             print("---1---")
             time.sleep(1)
 
@@ -17,6 +19,6 @@ p.start()
 
 
 
-while True:
+for x in range(3):
     print("---2----")
     time.sleep(1)
