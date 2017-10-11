@@ -6,13 +6,13 @@ import time
 ##定义一个普通函数
 def worker(num):
     #那下面这里是这样定义咯，随机返回一个数来循环。
-    for i in range(10):
+    for i in range(1):
         print("-=--pid =%d and num is %s"%(os.getpid(),num))
         time.sleep(1)
 #
 pool = Pool(3)
 
-for i in range(10):
+for i in range(11):
     pool.apply_async(worker,(i,))
 
 
