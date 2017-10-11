@@ -4,6 +4,7 @@ import time,random,os
 def write(q):
     for value in ['A','B','C']:
         q.put(value)
+        time.sleep(2)
         print("this is %s"%value)
         time.sleep(random.random())
 
@@ -23,9 +24,11 @@ if __name__ == "__main__":
     pw.start()
     #启动子进程的PW
 
-
+#pw.join()
     pr.start()
-
+##为什么一定要写在这个位置呢？？？请问、？？
+##大概懂了是什么意思了，就是，假如，这个位置不设置一个拥塞等待的话，
+##下面的pr.teminate由于不是子线程的一部分，会继续执行，然后退出。   
     pw.join()
 
     pr.terminate()
