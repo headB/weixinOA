@@ -5,7 +5,8 @@ import time
 
 
 ##假设在这里增加函数，应该不会被重复的，因为按照fork的方法，写在前面的代码应该不会复制过去执行。
-
+##针对上面的言论，这个全局变量的函数，linux只会执行一次，所以，注意小心一点了。
+##window和linux运行结果不一样，尽量以linux为准。
 def printTest2():
     print("can program runing me ???if can, how many times??")
 
@@ -39,8 +40,7 @@ if __name__ == "__main__":
 
 #print(q.get(True))
 
-##测试，现在这里超出了 __name__ == __main__范围，就是重复的线程范围？？？
-##这里看起来好像fork的那部分，后面都是重复的部分？？？其实奇了个怪。
+##测试了，然后发现，是window的问题，在linux上是没有问题的。
 
 
 def printTest():
