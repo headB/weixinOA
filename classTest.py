@@ -72,3 +72,8 @@ print(next(x3))
 print(next(x3))
 print(next(x3))
 
+#生成器
+#这个是列表生成式
+x4 = [(name,values)  for name,values in x2.items()]
+
+print(x4)
