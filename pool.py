@@ -10,13 +10,14 @@ def worker(num):
         print("-=--pid =%d and num is %s"%(os.getpid(),num))
         time.sleep(1)
 #
-pool = Pool(3)
 
-for i in range(11):
-    pool.apply_async(worker,(i,))
+if __name__ == "__main__":
+    pool = Pool(3)
 
+    for i in range(11):
+        pool.apply_async(worker,(i,))
 
-##close是什么???
-pool.close()
-pool.join()
+    ##close是什么???
+    pool.close()
+    pool.join()
 
