@@ -11,14 +11,16 @@ class MyNewProcess(Process):
             print("---1---")
             time.sleep(1)
 
-p = MyNewProcess()
-
+if __name__ == "__main__":
+    p = MyNewProcess()
+    p.start()
+    for x in range(3):
+     print("---2----")
+     time.sleep(1)
 ##这里就是延伸一个问题，就是，上面并没有代入target,就是没有带入函数，
 ##但是调用start()方法的时候，里面的start()包含了run方法了。
-p.start()
 
 
 
-for x in range(3):
-    print("---2----")
-    time.sleep(1)
+
+
