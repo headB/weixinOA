@@ -77,3 +77,19 @@ print(next(x3))
 x4 = [(name,values)  for name,values in x2.items()]
 
 print(x4)
+##创建一个储存列表的生成器。
+
+x5 =  ([name,values]  for name,values in x2.items())
+print(x5)
+
+print(next(x5))
+
+x6 = ({name:values}  for name,values in x2.items())
+print(x6)
+
+print(next(x6))
+
+x7 = (name+"--"+values  for name,values in x2.items())
+print(x7)
+
+print(next(x7))
