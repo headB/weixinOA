@@ -17,6 +17,7 @@ if __name__ == "__main__":
     for x in range(3):
      print("---2----")
      time.sleep(1)
+    p.join()
 ##这里就是延伸一个问题，就是，上面并没有代入target,就是没有带入函数，
 ##但是调用start()方法的时候，里面的start()包含了run方法了。
 
