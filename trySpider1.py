@@ -1,14 +1,13 @@
 from multiprocessing import Pool
 import urllib.request
-import xuanPrint.package2
-import xuanPrint
+from xuanPrint import sendMsg,printTest,package2
 
 ##定义进程池
 ##定义好数量
 pa = Pool(3)
 
-xuanPrint.sendMsg.sendMsg()
-newClass = xuanPrint.package2.printWorld.dog()
+sendMsg.sendMsg()
+newClass = package2.printWorld.dog()
 
 newClass.testMod()
 
