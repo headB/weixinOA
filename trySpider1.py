@@ -1,25 +1,29 @@
 from multiprocessing import Pool
 import urllib.request
-from xuanPrint import *
-from xuanPrint import package2
+import time
 
 ##定义进程池
 ##定义好数量
-pa = Pool(3)
 
-sendMsg.sendMsg()
-newClass = package2.printWorld.dog()
-
-newClass.testMod()
 
 def pachong():
-    pass
+    time.sleep(1)
+    print("hello world!!")
     #res = urllib.request.urlopen("www.baidu.com")
 
 ##程序必写的这句话
 
 def main():
-    pass
+
+    urlSite = ["http://www.baidu.com","http://163.com","http://www.520it.com"]
+##定义进程池
+##定义好数量
+    #定义好进程池之后，下面就可以写个循环，把任务代入进程池进行。
+    pa = Pool(3)
+    for x in range(3):
+        pa.apply_async(pachong)
+    pa.close()
+    pa.join()
 
 if __name__ == "__main__":
-    pass
+    main()
