@@ -1,6 +1,7 @@
 from multiprocessing import Pool
 import urllib.request
-from xuanPrint import sendMsg,printTest,package2
+from xuanPrint import *
+from xuanPrint import package2
 
 ##定义进程池
 ##定义好数量
