@@ -1,6 +1,7 @@
 from multiprocessing import Pool
 import urllib.request
 import time
+import os
 
 ##定义进程池
 ##定义好数量
@@ -27,3 +28,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print(os.getcwd())
+
