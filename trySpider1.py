@@ -2,6 +2,8 @@ from multiprocessing import Pool
 import urllib.request
 import time
 import os
+#引入异步模块
+import asyncio
 
 ##定义进程池
 ##定义好数量
@@ -15,7 +17,8 @@ def pachong(y):
     #print("F:\pythonTest\weixinOA\\"+str(y))
     #f = open("F:\pythonTest\weixinOA\\"+'test'+str(y)+".txt",'w')
     baseDir = os.getcwd()
-    f = open(baseDir+'\\test'+str(y)+".txt",'w')
+    f = open('xx'+str(y)+'.txt','w')
+    #f = open(baseDir+'\\test'+str(y)+".txt",'w')
     f.write("hello world"+str(y))
     f.close()
     #如何将内容生成在本地文件呢？？问的好，现在就去看看
@@ -37,5 +40,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
     #print(os.getcwd())
 
