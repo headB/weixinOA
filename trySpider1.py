@@ -17,12 +17,14 @@ def pachong(y):
     #print("F:\pythonTest\weixinOA\\"+str(y))
     #f = open("F:\pythonTest\weixinOA\\"+'test'+str(y)+".txt",'w')
     baseDir = os.getcwd()
-    f = open('xx'+str(y)+'.txt','w')
+    #f = open('xx'+str(y)+'.txt','w')
     #f = open(baseDir+'\\test'+str(y)+".txt",'w')
-    f.write("hello world"+str(y))
-    f.close()
+    #f.write("hello world"+str(y))
+    #f.close()
     #如何将内容生成在本地文件呢？？问的好，现在就去看看
     #res = urllib.request.urlopen("www.baidu.com")
+    with open('xx'+str(y)+'.txt','w') as f:
+        f.write("hello world"+str(y))
 
 ##程序必写的这句话
 
